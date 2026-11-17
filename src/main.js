@@ -4,7 +4,8 @@ import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import { setupCounter } from './counter.js'
 
-<div class="flex min-h-screen items-start justify-center bg-slate-100 px-4 pt-10">
+document.querySelector('#app').innerHTML = `
+  <div class="flex min-h-screen items-start justify-center bg-slate-100 px-4 pt-10">
     <div class="w-full max-w-sm rounded-2xl bg-white p-6 text-center shadow-lg">
       <h2 class="text-xl font-bold text-slate-900">
         สวัสดี Tailwind
@@ -17,5 +18,6 @@ import { setupCounter } from './counter.js'
       </button>
     </div>
   </div>
+`
 
 setupCounter(document.querySelector('#counter'))
